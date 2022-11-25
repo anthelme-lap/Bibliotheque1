@@ -1,0 +1,34 @@
+[
+    {
+        "id":1,
+        "title":"L'ordonnance",
+        "description":"Contenu de l'ordonnance",
+        "category":{
+            "id":2,
+            "name":"Economie"
+        },
+        "auhtor": "Soro Guéfala"
+    },
+
+    {
+        "id":2,
+        "title":"L'aventure ambigue de Check Amidou Chan",
+        "description":"Contenu de l'aventure ambigue",
+        "category":{
+            "id":1,
+            "name":"Colonisation"
+        },
+        "auhtor": "Check Amidou Chan"
+    },
+
+    {
+        "id":3,
+        "title":"L'identité",
+        "description":"Contenu de l'identité",
+        "category":{
+            "id":3,
+            "name":"Culture"
+        },
+        "auhtor": "Jean Mari Adiaffi"
+    }
+]
