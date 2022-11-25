@@ -1,0 +1,47 @@
+<div class="container py-4">
+  <div mat-dialog-action>
+    <button style="margin-bottom: 3px;" mat-raised-button color="primary" (click)="openDialogAddAuthor()">Ajouter un auteur</button>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="card border-0  card-tab mb-5 bg-white ">
+        <div class="card-header bg-gradient-primary pb-0">
+          <h6 class="text-white text-uppercase font-weight-bold">Liste des auteurs</h6>
+        </div>
+        <div class="card-body px-0 pt-0 pb-2">
+          <div class="table-responsive p-0">
+            <table class="table align-items-center mb-0">
+              <thead>
+                <tr>
+                  <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Author</th>
+                  <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Function</th>
+                  <th class="text-secondary opacity-7"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let author of authorList">
+                  <td>
+                      Numéro-{{author.id}}
+                  </td>
+                  <td>
+                    <p class=" font-weight-bold mb-0">{{author.authorName}}</p>
+                  </td>
+                  <td class="align-middle ">
+                    <div mat-dialog-action>
+                      <button mat-raised-button color="inf" (click)="openDialogEditAuthor(author)">Edit</button>
+                      <button style="margin-left: 3px;" mat-raised-button color="warn" (click)="deleteAuthor(author.id)">Delete</button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+              
+            </table>
+          </div>
+        </div>
+        <div class="card-header bg-gradient-primary pb-0">
+          <h6 class="text-white font-weight-bold">Footer</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

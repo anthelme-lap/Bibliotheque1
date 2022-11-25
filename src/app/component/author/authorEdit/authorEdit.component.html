@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+      <h1 style="text-align: center;">AJOUT AUTEUR</h1>
+      <form [formGroup]="authorEditForm" (ngSubmit)="editAuthor()">
+        <mat-dialog-content>
+          <mat-form-field appearance="outline">
+            <!-- <div class="form-group"> -->
+              <mat-label for="">Nom auteur</mat-label>
+              <input matInput formControlName="authorName" >
+            <!-- </div> -->
+          </mat-form-field>
+        </mat-dialog-content>
+        <div mat-dialog-action [align]="'end'">
+          <button mat-raised-button color="warn" mat-dialog-close>Fermer</button>
+          <button style="margin-left: 8px;" mat-raised-button color="primary">Edit</button>
+        </div>
+        
+      </form>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="row">
+        <h1 style="text-align: center;">{{formTitle}}</h1>
+        <form [formGroup]="bookForm" (ngSubmit)="addBook()">
+          <div mat-dialog-content>
+            <mat-form-field appearance="outline">
+                <mat-label for="">Titre du livre</mat-label>
+                <input matInput formControlName="bookTitle" >
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label for="">Nom auteur</mat-label>
+                <mat-select matInput formControlName="bookAuthor" multiple>
+                    <mat-option *ngFor="let author of authorlist" value="{{author.authorName}}">
+                        {{author.authorName}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label for="">Catégorie</mat-label>
+                <mat-select matInput formControlName="bookCategory" multiple>
+                    <mat-option *ngFor="let category of categorylist" value="{{category.categoryName}}">
+                        {{category.categoryName}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label for="">Nom auteur</mat-label>
+                <textarea matInput formControlName="bookContent" >
+                    Description
+                </textarea>
+            </mat-form-field>
+          </div>
+          <div mat-dialog-action [align]="'end'">
+            <button mat-raised-button color="warn" mat-dialog-close>Fermer</button>
+            <button style="margin-left: 8px;" mat-raised-button color="primary">{{actionBtn}}</button>
+          </div>
+        </form>
+    </div>
+  </div>
+  

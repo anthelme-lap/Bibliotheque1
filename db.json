@@ -1,11 +1,62 @@
 {
-    "posts": [
-      {
-        "id": 1,
-        "title": "hello"
-      }
-    ],
-    "profile": {
-      "name": "typicode"
+  "book": [
+    {
+      "bookTitle": "Climbié",
+      "bookContent": "Ce roman nous parle de la colonisation en cote d'ivoire",
+      "bookAuthor": [
+        "Bernard Dadié"
+      ],
+      "bookCategory": [
+        "Politique"
+      ],
+      "id": 1
+    },
+    {
+      "bookTitle": "Père riche, père pauvre",
+      "bookContent": "Apprendre l'entrepreneuriat",
+      "bookAuthor": [
+        "Robert Kyosaki"
+      ],
+      "bookCategory": [
+        "Economie"
+      ],
+      "id": 2
     }
-  }
+  ],
+  "category": [
+    {
+      "categoryName": "Politique",
+      "id": 1
+    },
+    {
+      "categoryName": "Culture Africaine",
+      "id": 2
+    },
+    {
+      "categoryName": "Economie",
+      "id": 3
+    }
+  ],
+  "author": [
+    {
+      "authorName": "Soro Guéfala",
+      "id": 1
+    },
+    {
+      "authorName": "Bernard Dadié",
+      "id": 2
+    },
+    {
+      "authorName": "Jean-mari Adiaffi",
+      "id": 3
+    },
+    {
+      "authorName": "Albert Camus",
+      "id": 4
+    },
+    {
+      "authorName": "Robert Kyosaki",
+      "id": 5
+    }
+  ]
+}

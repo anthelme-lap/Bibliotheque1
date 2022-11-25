@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row">
+        <h1 style="text-align: center;">{{formTitle}}</h1>
+        <form [formGroup]="categoryForm" (ngSubmit)="addCategory()">
+          <div mat-dialog-content>
+            <mat-form-field appearance="outline">
+                <mat-label for="">Nom auteur</mat-label>
+                <input matInput formControlName="categoryName" >
+            </mat-form-field>
+          </div>
+          <div mat-dialog-action [align]="'end'">
+            <button mat-raised-button color="warn" mat-dialog-close>Fermer</button>
+            <button style="margin-left: 8px;" mat-raised-button color="primary">{{actionBtn}}</button>
+          </div>
+        </form>
+    </div>
+  </div>
+  
