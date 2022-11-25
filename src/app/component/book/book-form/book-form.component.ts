@@ -44,6 +44,7 @@ export class BookFormComponent implements OnInit {
     if(this.editBook){
       this.actionBtn = 'Modifier';
       this.formTitle = 'Modifier livre';
+      this.formTitle = 'Modifier livre';
       this.bookForm.controls['bookTitle'].setValue(this.editBook.bookTitle),
       this.bookForm.controls['bookContent'].setValue(this.editBook.bookContent),
       this.bookForm.controls['bookAuthor'].setValue(this.editBook.bookAuthor),
